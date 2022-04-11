@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Расходы</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220411215208">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<h1 class="top-header__title title">Расходы</h1>
+
+					<div class="top-header__info">
+						<time class="top-header__info-item clock icon-clock" data-da=".page-info__mobile,768,1">10:00</time>
+						<div class="top-header__info-item calculator icon-calculator" data-da=".page-info__mobile,768,2">
+							Калькулятор
+						</div>
+						<div class="top-header__info-item tasks icon-tasks">
+							Задание
+							<div class="tasks__sum">3</div>
+						</div>
+					</div>
+
+					<div class="top-header__driver driver">
+						<button type="button" class="top-header__driver-button driver__button button">Редактировать</button>
+
+						<div class="top-header__driver-info driver__info" data-da=".page-info__mobile,768,last">
+							<div class="top-header__driver-photo driver__photo">
+								<picture><source srcset="img/driver/driver-avatar.webp" type="image/webp"><img src="img/driver/driver-avatar.png" alt="driver-avatar"></picture>
+							</div>
+							<span>Имя и Фамилия</span>
+						</div>
+					</div>
+
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+
+			<div class="header__menu menu">
+				<div class="menu__container">
+					<nav class="menu__body">
+						<ul class="menu__list">
+
+							<li data-spollers="992,max" class="menu__item">
+								<div class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/orders.svg" alt="orders">
+									</div>
+									<span>Заказы</span>
+								</div>
+								<button type="button" data-spoller class="menu__link-btn icon-arrow-down"></button>
+								<div class="menu__item-dropdown dropdown-menu">
+									<a href="" class="dropdown-menu__link">Счета</a>
+									<a href="" class="dropdown-menu__link">Оплаты</a>
+								</div>
+							</li>
+
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/database.svg" alt="database">
+									</div>
+									<span>База данных</span>
+								</a>
+							</li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/expenses.svg" alt="expenses">
+									</div>
+									<span>Расходы</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/salary.svg" alt="salary">
+									</div>
+									<span>Зарплата</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/reports.svg" alt="reports">
+									</div>
+									<span>Отчеты</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/staff.svg" alt="staff">
+									</div>
+									<span>Сотрудники</span>
+								</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main main-expenses">
+			<div class="page-info__mobile"></div>
+			<div class="expenses__container">
+				<!--<div class="expenses-info">
+        <div class="expenses-info__item">
+            <div class="expenses-info__icon">
+                <img src="img/expenses/expenses-icon-01.svg" alt="">
+            </div>
+
+            <div class="expenses-info__text">
+                За год
+                <span>2300</span>
+            </div>
+        </div>
+        <div class="expenses-info__item">
+            <div class="expenses-info__icon">
+                <img src="img/expenses/expenses-icon-02.svg" alt="">
+            </div>
+
+            <div class="expenses-info__text">
+                За месяц
+                <span>231</span>
+            </div>
+        </div>
+        <div class="expenses-info__item">
+            <div class="expenses-info__icon">
+                <img src="img/expenses/expenses-icon-03.svg" alt="">
+            </div>
+
+            <div class="expenses-info__text">
+                Ожидаемо
+                <span>123</span>
+            </div>
+        </div>
+        <div class="expenses-info__item">
+            <div class="expenses-info__icon">
+                <img src="img/expenses/expenses-icon-04.svg" alt="">
+            </div>
+
+            <div class="expenses-info__text">
+                Основные
+                <span>12</span>
+            </div>
+        </div>
+    </div>
+-->
+				<div class="expenses-info">
+					<div class="expenses-info__body">
+
+						<div class="expenses-info__item">
+							<div class="expenses-info__icon">
+								<img src="img/expenses/expenses-icon-01.svg" alt="">
+							</div>
+
+							<div class="expenses-info__content">
+								<span class="expenses-info__text">Новых заказов</span>
+								<span class="expenses-info__data">2300</span>
+							</div>
+						</div>
+
+						<div class="expenses-info__item">
+							<div class="expenses-info__icon">
+								<img src="img/expenses/expenses-icon-02.svg" alt="">
+							</div>
+
+							<div class="expenses-info__content">
+								<span class="expenses-info__text">Деньги не получены</span>
+								<span class="expenses-info__data">1200<sub>руб</sub></span>
+							</div>
+						</div>
+
+						<div class="expenses-info__item">
+							<div class="expenses-info__icon">
+								<img src="img/expenses/expenses-icon-03.svg" alt="">
+							</div>
+
+							<div class="expenses-info__content">
+								<span class="expenses-info__text">Деньги получены</span>
+								<span class="expenses-info__data">57 000<sub>руб</sub></span>
+							</div>
+						</div>
+
+						<div class="expenses-info__item">
+							<div class="expenses-info__icon">
+								<img src="img/expenses/expenses-icon-04.svg" alt="">
+							</div>
+
+							<div class="expenses-info__content">
+								<span class="expenses-info__text">Не отправленных счетов</span>
+								<span class="expenses-info__data">2300</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="expenses-category">
+					<div class="expenses-category__head">
+						<h2 class="expenses-category__title">статистика по категориям</h2>
+
+						<div class="expenses-category__group">
+							<div class="expenses-category__group-item">
+								<button type="button" class="expenses-category__btn category-btn-js">Добавить новую
+									категорию</button>
+
+								<div class="expenses-category__dropdown dropdown-category">
+									<div class="dropdown-category__close icon-cancel"></div>
+
+									<form class="dropdown-category__form">
+										<label class="dropdown-category__label">
+											<span>Введите название категории</span>
+											<input autocomplete="off" type="number" class="dropdown-category__input">
+										</label>
+										<button type="submit" class="dropdown-category__button button">Добавить</button>
+									</form>
+
+								</div>
+							</div>
+							<div class="expenses-category__group-item">
+								<button type="button" class="expenses-category__btn category-btn-js">Добавить расход</button>
+								<div class="expenses-category__dropdown dropdown-category">
+									<div class="dropdown-category__close icon-cancel"></div>
+
+									<div class="dropdown-category__form">
+										<label class="dropdown-category__label">
+											<span>Введите категорию</span>
+											<select name="form[]" class="dropdown-category__select">
+												<option value="1" selected>Ежемесячные</option>
+												<option value="2">Единоразовые</option>
+												<option value="3">Ремонты</option>
+												<option value="4">Дизель</option>
+											</select>
+										</label>
+										<label class="dropdown-category__label">
+											<span>Общая сумма</span>
+											<input autocomplete="off" type="number" class="dropdown-category__input">
+										</label>
+										<label class="dropdown-category__label">
+											<span>Название расхода</span>
+											<input autocomplete="off" type="text" class="dropdown-category__input">
+										</label>
+										<label class="dropdown-category__label">
+											<span>Сумма расхода</span>
+											<input autocomplete="off" type="number" class="dropdown-category__input">
+										</label>
+
+										<button type="submit" class="dropdown-category__button button">Добавить</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="expenses-category__body">
+
+						<ul class="expenses-category__list">
+							<li>
+								<div class="expenses-category__item">
+									<div data-spollers class="expenses-spollers">
+										<div class="expenses-spollers__item">
+											<button type="button" data-spoller class="expenses-spollers__title icon-arrow-spoller">Ежемесячные</button>
+
+
+
+											<div class="expenses-spollers__body">
+												<div class="expenses-category__total">150$</div>
+
+												<div class="expenses-spollers__block">
+
+													<div class="expenses-category__types">
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт двигателя MAN TGX</div>
+
+															<div class="expenses-category__types-values">
+																<span>50$</span><span>30%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт кабины Mercedes-Benz Actros
+															</div>
+															<div class="expenses-category__types-values">
+																<span>20$</span><span>15%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт ходовой MAN TGX</div>
+															<div class="expenses-category__types-values">
+																<span>80$</span><span>65%</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="expenses-category__procent percent-expenses">
+														<svg class="percent-expenses__ring">
+															<circle class="percent-expenses__circle" cx="60" cy="60" r="52">
+															</circle>
+														</svg>
+														<div class="percent-expenses__number">26%</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="expenses-category__item">
+									<div data-spollers class="expenses-spollers">
+										<div class="expenses-spollers__item">
+											<button type="button" data-spoller class="expenses-spollers__title icon-arrow-spoller">Единоразовые</button>
+
+
+											<div class="expenses-spollers__body">
+												<div class="expenses-category__total">150$</div>
+
+												<div class="expenses-spollers__block">
+
+													<div class="expenses-category__types">
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт двигателя MAN TGX</div>
+
+															<div class="expenses-category__types-values">
+																<span>50$</span><span>30%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт кабины Mercedes-Benz Actros
+															</div>
+															<div class="expenses-category__types-values">
+																<span>20$</span><span>15%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт ходовой MAN TGX</div>
+															<div class="expenses-category__types-values">
+																<span>80$</span><span>65%</span>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="expenses-category__procent percent-expenses">
+														<svg class="percent-expenses__ring">
+															<circle class="percent-expenses__circle" cx="60" cy="60" r="52">
+															</circle>
+														</svg>
+														<div class="percent-expenses__number">76%</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="expenses-category__item">
+									<div data-spollers class="expenses-spollers">
+										<div class="expenses-spollers__item">
+											<button type="button" data-spoller class="expenses-spollers__title icon-arrow-spoller">Ремонты</button>
+
+
+
+											<div class="expenses-spollers__body">
+												<div class="expenses-category__total">150$</div>
+
+												<div class="expenses-spollers__block">
+
+													<div class="expenses-category__types">
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт двигателя MAN TGX</div>
+
+															<div class="expenses-category__types-values">
+																<span>50$</span><span>30%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт кабины Mercedes-Benz Actros
+															</div>
+															<div class="expenses-category__types-values">
+																<span>20$</span><span>15%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт ходовой MAN TGX</div>
+															<div class="expenses-category__types-values">
+																<span>80$</span><span>65%</span>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="expenses-category__procent percent-expenses">
+														<svg class="percent-expenses__ring">
+															<circle class="percent-expenses__circle" cx="60" cy="60" r="52">
+															</circle>
+														</svg>
+														<div class="percent-expenses__number">56%</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="expenses-category__item">
+									<div data-spollers class="expenses-spollers">
+										<div class="expenses-spollers__item">
+											<button type="button" data-spoller class="expenses-spollers__title icon-arrow-spoller">Дизель</button>
+
+
+
+											<div class="expenses-spollers__body">
+												<div class="expenses-category__total">150$</div>
+
+												<div class="expenses-spollers__block">
+
+													<div class="expenses-category__types">
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт двигателя MAN TGX</div>
+
+															<div class="expenses-category__types-values">
+																<span>50$</span><span>30%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт кабины Mercedes-Benz Actros
+															</div>
+															<div class="expenses-category__types-values">
+																<span>20$</span><span>15%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт ходовой MAN TGX</div>
+															<div class="expenses-category__types-values">
+																<span>80$</span><span>65%</span>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="expenses-category__procent percent-expenses">
+														<svg class="percent-expenses__ring">
+															<circle class="percent-expenses__circle" cx="60" cy="60" r="52">
+															</circle>
+														</svg>
+														<div class="percent-expenses__number">86%</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="expenses-category__item">
+									<div data-spollers class="expenses-spollers">
+										<div class="expenses-spollers__item">
+											<button type="button" data-spoller class="expenses-spollers__title icon-arrow-spoller">Кредит</button>
+
+
+
+											<div class="expenses-spollers__body">
+												<div class="expenses-category__total">150$</div>
+
+												<div class="expenses-spollers__block">
+
+													<div class="expenses-category__types">
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт двигателя MAN TGX</div>
+
+															<div class="expenses-category__types-values">
+																<span>50$</span><span>30%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт кабины Mercedes-Benz Actros
+															</div>
+															<div class="expenses-category__types-values">
+																<span>20$</span><span>15%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт ходовой MAN TGX</div>
+															<div class="expenses-category__types-values">
+																<span>80$</span><span>65%</span>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="expenses-category__procent percent-expenses">
+														<svg class="percent-expenses__ring">
+															<circle class="percent-expenses__circle" cx="60" cy="60" r="52">
+															</circle>
+														</svg>
+														<div class="percent-expenses__number">16%</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="expenses-category__item">
+									<div data-spollers class="expenses-spollers">
+										<div class="expenses-spollers__item">
+											<button type="button" data-spoller class="expenses-spollers__title icon-arrow-spoller">Страховка</button>
+
+
+
+											<div class="expenses-spollers__body">
+												<div class="expenses-category__total">150$</div>
+
+												<div class="expenses-spollers__block">
+
+													<div class="expenses-category__types">
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт двигателя MAN TGX</div>
+
+															<div class="expenses-category__types-values">
+																<span>50$</span><span>30%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт кабины Mercedes-Benz Actros
+															</div>
+															<div class="expenses-category__types-values">
+																<span>20$</span><span>15%</span>
+															</div>
+														</div>
+														<div class="expenses-category__types-row">
+															<div class="expenses-category__type">Ремонт ходовой MAN TGX</div>
+															<div class="expenses-category__types-values">
+																<span>80$</span><span>65%</span>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="expenses-category__procent percent-expenses">
+														<svg class="percent-expenses__ring">
+															<circle class="percent-expenses__circle" cx="60" cy="60" r="52">
+															</circle>
+														</svg>
+														<div class="percent-expenses__number">46%</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="login" aria-hidden="true" class="popup-login login popup">
+		<div class="popup__wrapper login__wrapper">
+			<div class="popup__container">
+				<div class="popup__content login__content">
+					<button data-close type="button" class="login__close icon-cancel"></button>
+
+					<form action="#" class="login__form form-login">
+						<div class="form-login__group">
+							<div class="form-login__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-required placeholder="Логин, телефон или почта" class="form-login__input input">
+							</div>
+							<div class="form-login__row">
+								<input autocomplete="off" type="password" name="form[]" data-error="Неверный Пароль" data-required placeholder="Пароль" class="form-login__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-login__button button">Войти</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="register" aria-hidden="true" class="popup-login register popup">
+		<div class="popup__wrapper register__wrapper">
+			<div class="popup__container">
+				<div class="popup__content register__content">
+					<button data-close type="button" class="register__close icon-cancel"></button>
+
+					<form action="#" class="register__form form-register">
+						<div class="form-register__group">
+
+							<label class="form-register__upload upload icon-download-input">
+								<span>Photo</span>
+								<input id="upload-input" class="upload__input" type="file" name="file[]" multiple="">
+								<picture><source srcset="#" type="image/webp"><img id="upload-img" class="upload__img" src="#" alt="user-avatar" /></picture>
+							</label>
+
+						</div>
+						<div class="form-register__group">
+							<div class="form-register__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Логин, телефон или почта" class="form-register__input input">
+							</div>
+							<div class="form-register__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Имя и Фамилия" class="form-register__input input">
+							</div>
+							<div class="form-register__row">
+								<input autocomplete="off" type="password" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Введите пароль" class="form-register__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-register__button button">Зарегистрироваться</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220411215208"></script>
+</body>
+
+</html>

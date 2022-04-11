@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220411215208">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="page-main">
+			<header class="header">
+
+
+				<div class="header__top top-header">
+					<div class="top-header__container">
+						<h1 class="top-header__title title"> Рабочая панель</h1>
+
+						<div class="top-header__info">
+							<time class="top-header__info-item clock icon-clock" data-da=".page-info__mobile,768,2">10:00</time>
+							<div class="top-header__info-item calculator icon-calculator" data-da=".page-info__mobile,768,1">
+								Калькулятор
+							</div>
+							<div class="top-header__info-item tasks icon-tasks">
+								Задание
+								<div class="tasks__sum">3</div>
+							</div>
+						</div>
+
+						<div class="top-header__auth auth" data-da=".menu__body,992,2">
+							<button data-popup="#login" type="button" class="auth__btn">Вход</button>
+							<span>или</span>
+							<button data-popup="#register" type="button" class="auth__btn">Регистрация</button>
+						</div>
+
+						<button type="button" class="icon-menu"><span></span></button>
+					</div>
+				</div>
+
+				<div class="header__menu menu">
+					<div class="menu__container">
+						<nav class="menu__body">
+							<ul class="menu__list">
+
+								<li data-spollers="992,max" class="menu__item">
+									<div class="menu__link">
+										<div class="menu__link-icon">
+											<img src="img/icons/menu/orders.svg" alt="orders">
+										</div>
+										<span>Заказы</span>
+									</div>
+									<button type="button" data-spoller class="menu__link-btn icon-arrow-down"></button>
+									<div class="menu__item-dropdown dropdown-menu">
+										<a href="" class="dropdown-menu__link">Счета</a>
+										<a href="" class="dropdown-menu__link">Оплаты</a>
+									</div>
+								</li>
+
+								<li class="menu__item">
+									<a href="" class="menu__link">
+										<div class="menu__link-icon">
+											<img src="img/icons/menu/database.svg" alt="database">
+										</div>
+										<span>База данных</span>
+									</a>
+								</li>
+								<li class="menu__item"><a href="" class="menu__link">
+										<div class="menu__link-icon">
+											<img src="img/icons/menu/expenses.svg" alt="expenses">
+										</div>
+										<span>Расходы</span>
+									</a></li>
+								<li class="menu__item"><a href="" class="menu__link">
+										<div class="menu__link-icon">
+											<img src="img/icons/menu/salary.svg" alt="salary">
+										</div>
+										<span>Зарплата</span>
+									</a></li>
+								<li class="menu__item"><a href="" class="menu__link">
+										<div class="menu__link-icon">
+											<img src="img/icons/menu/reports.svg" alt="reports">
+										</div>
+										<span>Отчеты</span>
+									</a></li>
+								<li class="menu__item"><a href="" class="menu__link">
+										<div class="menu__link-icon">
+											<img src="img/icons/menu/staff.svg" alt="staff">
+										</div>
+										<span>Сотрудники</span>
+									</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="main main-page">
+				<div class="page-info">
+					<div class="page-info__container">
+						<div class="page-info__mobile"></div>
+
+						<div class="page-info__inner">
+							<div class="page-info__item">
+								<span class="page-info__item-profit page-info__item-profit-acent">$ 21, 543</span>
+								<span class="page-info__item-text">Годовая прибыль</span>
+							</div>
+							<div class="page-info__item">
+								<span class="page-info__item-profit">$ 24,333</span>
+								<span class="page-info__item-text">Оборот</span>
+							</div>
+							<div class="page-info__item">
+								<span class="page-info__item-profit">$ 55,443</span>
+								<span class="page-info__item-text">Годовые затраты</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="section orders">
+					<div class="order__container">
+
+						<div class="orders__search search-orders">
+
+
+							<div class="search-orders__column">
+								<div class="search-orders__input">
+									<span class="search-orders__icon icon-search"></span>
+									<input autocomplete="off" type="text" name="form[]" placeholder="Поиск" class="input">
+								</div>
+							</div>
+
+
+							<div class="search-orders__column">
+								<div class="search-orders__options options">
+									<fieldset class="options__group">
+										<div class="options__title">Период</div>
+
+										<div class="options__group-items">
+											<div class="options__item">
+												<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option-1">
+												<label for="o_1" class="options__label"><span class="options__text">Неделя</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_2" class="options__input" type="radio" value="2" name="option-1">
+												<label for="o_2" class="options__label"><span class="options__text">Месяц</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_3" class="options__input" type="radio" value="3" name="option-1">
+												<label for="o_3" class="options__label"><span class="options__text">Дата</span></label>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="options__group">
+										<div class="options__title">Сортировка</div>
+										<div class="options__group-items">
+											<div class="options__item">
+												<input hidden id="o_4" class="options__input" checked type="radio" value="4" name="option-2">
+												<label for="o_4" class="options__label"><span class="options__text">По
+														дате</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_5" class="options__input" type="radio" value="5" name="option-2">
+												<label for="o_5" class="options__label"><span class="options__text">По
+														водителю</span></label>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="options__group">
+										<div class="options__title">Заказы</div>
+										<div class="options__group-items">
+											<div class="options__item">
+												<input hidden id="o_6" class="options__input" checked type="radio" value="6" name="option-3">
+												<label for="o_6" class="options__label"><span class="options__text">Сумма</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_7" class="options__input" type="radio" value="7" name="option-3">
+												<label for="o_7" class="options__label"><span class="options__text">Оплачены</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_8" class="options__input" type="radio" value="8" name="option-3">
+												<label for="o_8" class="options__label"><span class="options__text">Не
+														оплачены</span></label>
+											</div>
+										</div>
+
+									</fieldset>
+
+								</div>
+							</div>
+
+
+							<div class="search-orders__column">
+								<h3 class="search-orders__title">Отправить отчет </h3>
+
+								<div class="search-orders__input">
+									<input autocomplete="off" type="email" name="form[]" data-error="Введен не верный E-mail" data-required="email" placeholder="Введите почту" class="input">
+								</div>
+								<button type="submit" class="search-orders__button button">Отправить</button>
+							</div>
+
+
+
+						</div>
+
+
+
+						<div class="orders__result result-orders">
+							<h2 class="result-orders__title section-title">СПИСОК ЗАКАЗОВ</h2>
+
+							<div class="result-orders__body">
+
+								<table cellpadding="0" cellspacing="0" class="result-orders__table table-orders">
+									<tr>
+										<th class="table-orders__th"></th>
+										<th class="table-orders__th">Load ID</th>
+										<th class="table-orders__th">Pickup <br> date</th>
+										<th class="table-orders__th">Vehicle</th>
+										<th class="table-orders__th">Origin</th>
+										<th class="table-orders__th">Destination</th>
+										<th class="table-orders__th">Broker</th>
+										<th class="table-orders__th">Price</th>
+										<th class="table-orders__th">Paymant <br> memhod</th>
+										<th class="table-orders__th">Broker fee</th>
+										<th class="table-orders__th">Check <br> deposited</th>
+									</tr>
+									<tr>
+										<td class="table-orders__td">1</td>
+										<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+										<td class="table-orders__td">29/10/2021</td>
+										<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+										<td class="table-orders__td">Denton, TX<br> 76201</td>
+										<td class="table-orders__td">Load in toeeme</td>
+										<td class="table-orders__td">Metrogistics</td>
+										<td class="table-orders__td">$325,00</td>
+										<td class="table-orders__td">30 days</td>
+										<td class="table-orders__td">Load in <br> toeeme</td>
+										<td class="table-orders__td">Yes</td>
+									</tr>
+
+									<tr>
+										<td class="table-orders__td">2</td>
+										<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+										<td class="table-orders__td">29/10/2021</td>
+										<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+										<td class="table-orders__td">Denton, TX<br> 76201</td>
+										<td class="table-orders__td">Load in toeeme</td>
+										<td class="table-orders__td">Metrogistics</td>
+										<td class="table-orders__td">$325,00</td>
+										<td class="table-orders__td">30 days</td>
+										<td class="table-orders__td">Load in <br> toeeme</td>
+										<td class="table-orders__td">Yes</td>
+									</tr>
+
+									<tr>
+										<td class="table-orders__td">3</td>
+										<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+										<td class="table-orders__td">29/10/2021</td>
+										<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+										<td class="table-orders__td">Denton, TX<br> 76201</td>
+										<td class="table-orders__td">Load in toeeme</td>
+										<td class="table-orders__td">Metrogistics</td>
+										<td class="table-orders__td">$325,00</td>
+										<td class="table-orders__td">30 days</td>
+										<td class="table-orders__td">Load in <br> toeeme</td>
+										<td class="table-orders__td">Yes</td>
+									</tr>
+
+									<tr>
+										<td class="table-orders__td">4</td>
+										<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+										<td class="table-orders__td">29/10/2021</td>
+										<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+										<td class="table-orders__td">Denton, TX<br> 76201</td>
+										<td class="table-orders__td">Load in toeeme</td>
+										<td class="table-orders__td">Metrogistics</td>
+										<td class="table-orders__td">$325,00</td>
+										<td class="table-orders__td">30 days</td>
+										<td class="table-orders__td">Load in <br> toeeme</td>
+										<td class="table-orders__td">Yes</td>
+									</tr>
+
+									<tr>
+										<td colspan="11" class="table-orders__total">
+											<span>Date: 25.01.2022 - 13.02.2022</span>
+											<span>Total $25 450,00</span>
+										</td>
+									</tr>
+								</table>
+
+
+
+
+
+								<!-- <div class="table">
+                    <div class="table__row table__head">
+                        <div class="table__col"></div>
+                    </div>
+                </div>-->
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="indicators">
+					<div class="indicators__container">
+						<div class="indicators__body">
+
+							<div class="indicators__item">
+								<div class="indicators__icon">
+									<img src="img/indicators/01.svg" alt="indicators-icon">
+								</div>
+
+								<div class="indicators__content">
+									<span class="indicators__text">Новых заказов</span>
+									<span class="indicators__data">2300</span>
+								</div>
+							</div>
+
+							<div class="indicators__item">
+								<div class="indicators__icon">
+									<img src="img/indicators/02.svg" alt="indicators-icon">
+								</div>
+
+								<div class="indicators__content">
+									<span class="indicators__text">Деньги не получены</span>
+									<span class="indicators__data">1200<sub>руб</sub></span>
+								</div>
+							</div>
+
+							<div class="indicators__item">
+								<div class="indicators__icon">
+									<img src="img/indicators/03.svg" alt="indicators-icon">
+								</div>
+
+								<div class="indicators__content">
+									<span class="indicators__text">Деньги получены</span>
+									<span class="indicators__data">57 000<sub>руб</sub></span>
+								</div>
+							</div>
+
+							<div class="indicators__item">
+								<div class="indicators__icon">
+									<img src="img/indicators/04.svg" alt="indicators-icon">
+								</div>
+
+								<div class="indicators__content">
+									<span class="indicators__text">Не отправленных счетов</span>
+									<span class="indicators__data">2300</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="section week-info">
+					<div class="week-info__container">
+
+						<div class="week-info__inner">
+							<h2 class="week-info__title section-title">Информация за неделю</h2>
+
+							<div class="week-info__body">
+								<div class="week-info__item">
+									<div class="week-info__quantity">60 300 <sub>руб.</sub></div>
+									<span class="week-info__text">Max касса</span>
+								</div>
+								<div class="week-info__item">
+									<div class="week-info__quantity">25 300 <sub>руб.</sub></div>
+									<span class="week-info__text">Наличными</span>
+								</div>
+
+								<div class="week-info__item">
+									<div class="week-info__quantity">60 300 <sub>руб.</sub></div>
+									<span class="week-info__text">Безналичными</span>
+								</div>
+
+
+								<div class="week-info__item">
+									<div class="week-info__quantity">18</div>
+									<span class="week-info__text">Количество водителей</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="section driver-rating">
+					<div class="driver-rating__container">
+
+						<div class="driver-rating__inner">
+							<h2 class="section-title driver-rating__title">рейтинг водителей</h2>
+
+							<div class="driver-rating__body">
+								<div class="driver-rating__head">
+									<span>Имя водителя</span>
+									<span>Загрузка</span>
+									<span>Стоимость</span>
+									<span>Статус</span>
+								</div>
+								<div class="driver-rating__row">
+									<div class="driver-rating__item driver">
+										<div class="driver__photo">
+											<picture><source srcset="img/driver/driver-avatar.webp" type="image/webp"><img src="img/driver/driver-avatar.png" alt="driver-avatar"></picture>
+										</div>
+										<span>Имя и Фамилия</span>
+									</div>
+									<div class="driver-rating__item">
+										<span>30%</span>
+									</div>
+									<div class="driver-rating__item">
+										<span>15$ /час</span>
+									</div>
+									<div class="driver-rating__item driver-rating__status">
+										<span class="middle">Средний</span>
+									</div>
+								</div>
+								<div class="driver-rating__row">
+									<div class="driver-rating__item driver">
+										<div class="driver__photo">
+											<picture><source srcset="img/driver/driver-avatar.webp" type="image/webp"><img src="img/driver/driver-avatar.png" alt="driver-avatar"></picture>
+										</div>
+										<span>Имя и Фамилия</span>
+									</div>
+									<div class="driver-rating__item">
+										<span>30%</span>
+									</div>
+									<div class="driver-rating__item">
+										<span>15$ /час</span>
+									</div>
+									<div class="driver-rating__item driver-rating__status">
+										<span class="high">Высокий</span>
+									</div>
+								</div>
+								<div class="driver-rating__row">
+									<div class="driver-rating__item driver">
+										<div class="driver__photo">
+											<picture><source srcset="img/driver/driver-avatar.webp" type="image/webp"><img src="img/driver/driver-avatar.png" alt="driver-avatar"></picture>
+										</div>
+										<span>Имя и Фамилия</span>
+									</div>
+									<div class="driver-rating__item">
+										<span>30%</span>
+									</div>
+									<div class="driver-rating__item">
+										<span>15$ /час</span>
+									</div>
+									<div class="driver-rating__item driver-rating__status">
+										<span class="low">Низкий</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<section class="section comparison">
+					<div class="comparison__container">
+						<div class="comparison__inner">
+							<div class="comparison__head">
+								<h2 class="section-title comparison__title">Таблица сравнения</h2>
+							</div>
+
+							<div class="comparison__body">
+
+								<div class="comparison__col">
+									<span class="comparison__percent comparison__percent-big">65</span>
+									<p class="comparison__text">Auction Direct Transport LLC</p>
+								</div>
+								<div class="comparison__col">
+									<div class="comparison__block">
+										<span class="comparison__percent">34%</span>
+										<p class="comparison__text">Рейтинг второй компании</p>
+									</div>
+									<div class="comparison__block">
+										<span class="comparison__percent">15%</span>
+										<p class="comparison__text">Рейтинг третьей компании</p>
+									</div>
+								</div>
+								<div class="comparison__col">
+									<div class="comparison__item">
+										<div class="comparison__item-percent">18%</div>
+										<p class="comparison__item-text">Менее чем через год</p>
+									</div>
+									<div class="comparison__item">
+										<div class="comparison__item-percent">13%</div>
+										<p class="comparison__item-text">Компании до появления CRM</p>
+									</div>
+									<div class="comparison__item">
+										<div class="comparison__item-percent">10%</div>
+										<p class="comparison__item-text">Через 6-10 лет</p>
+									</div>
+									<div class="comparison__item">
+										<div class="comparison__item-percent">10%</div>
+										<p class="comparison__item-text">Более чем через 10 лет</p>
+									</div>
+									<div class="comparison__item">
+										<div class="comparison__item-percent">6%</div>
+										<p class="comparison__item-text">Не уверены</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section maintance">
+					<div class="maintance__container">
+						<div class="maintance__inner">
+							<h2 class="section-title maintance__title">maintance</h2>
+							<div class="maintance__body">
+								<div class="maintance__item">
+									<div class="maintance__icon">
+										<img src="img/maintance/01.svg" alt="maintance">
+									</div>
+									<div class="maintance__content">
+										<h4 class="maintance__name">Масло</h4>
+										<time class="maintance__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="maintance__item">
+									<div class="maintance__icon">
+										<img src="img/maintance/02.svg" alt="maintance">
+									</div>
+									<div class="maintance__content">
+										<h4 class="maintance__name">Фильтр</h4>
+										<time class="maintance__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="maintance__item">
+									<div class="maintance__icon">
+										<img src="img/maintance/03.svg" alt="maintance">
+									</div>
+									<div class="maintance__content">
+										<h4 class="maintance__name">Шины</h4>
+										<time class="maintance__date">25.11.2021</time>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section expiered">
+					<div class="expiered__container">
+						<div class="expiered__inner">
+							<h2 class="section-title expiered__title">expiered</h2>
+							<div class="expiered__body">
+								<div class="expiered__item">
+									<div class="expiered__icon">
+										<img src="img/expiered/01.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="maintance__name">Truck</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__item">
+									<div class="expiered__icon">
+										<img src="img/expiered/02.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Trailer</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__item">
+									<div class="expiered__icon">
+										<img src="img/expiered/03.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Med card</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__item">
+									<div class="expiered__icon">
+										<img src="img/expiered/04.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Inspection</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__item">
+									<div class="expiered__icon">
+										<img src="img/expiered/05.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Страховка</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="page-total">
+					<div class="page-total__container">
+
+						<div class="page-total__body">
+							<div class="page-total__item">
+								<h5 class="page-total__text">В работе</h5>
+								<span>3</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Всего</h5>
+								<span>5</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Сервис</h5>
+								<span>1</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Truck</h5>
+								<span>5</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Trailer</h5>
+								<span>4</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Водителей</h5>
+								<span>5</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">OWN</h5>
+								<span>2</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div id="login" aria-hidden="true" class="popup-login login popup">
+		<div class="popup__wrapper login__wrapper">
+			<div class="popup__container">
+				<div class="popup__content login__content">
+					<button data-close type="button" class="login__close icon-cancel"></button>
+
+					<form action="#" class="login__form form-login">
+						<div class="form-login__group">
+							<div class="form-login__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-required placeholder="Логин, телефон или почта" class="form-login__input input">
+							</div>
+							<div class="form-login__row">
+								<input autocomplete="off" type="password" name="form[]" data-error="Неверный Пароль" data-required placeholder="Пароль" class="form-login__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-login__button button">Войти</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="register" aria-hidden="true" class="popup-login register popup">
+		<div class="popup__wrapper register__wrapper">
+			<div class="popup__container">
+				<div class="popup__content register__content">
+					<button data-close type="button" class="register__close icon-cancel"></button>
+
+					<form action="#" class="register__form form-register">
+						<div class="form-register__group">
+
+							<label class="form-register__upload upload icon-download-input">
+								<span>Photo</span>
+								<input id="upload-input" class="upload__input" type="file" name="file[]" multiple="">
+								<picture><source srcset="#" type="image/webp"><img id="upload-img" class="upload__img" src="#" alt="user-avatar" /></picture>
+							</label>
+
+						</div>
+						<div class="form-register__group">
+							<div class="form-register__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Логин, телефон или почта" class="form-register__input input">
+							</div>
+							<div class="form-register__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Имя и Фамилия" class="form-register__input input">
+							</div>
+							<div class="form-register__row">
+								<input autocomplete="off" type="password" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Введите пароль" class="form-register__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-register__button button">Зарегистрироваться</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220411215208"></script>
+</body>
+
+</html>

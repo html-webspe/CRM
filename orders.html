@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Заказы</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220411215208">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<h1 class="top-header__title title">Заказы</h1>
+
+					<div class="top-header__info">
+						<time class="top-header__info-item clock icon-clock" data-da=".page-info__mobile,768,1">10:00</time>
+						<div class="top-header__info-item calculator icon-calculator" data-da=".page-info__mobile,768,2">
+							Калькулятор
+						</div>
+						<div class="top-header__info-item tasks icon-tasks">
+							Задание
+							<div class="tasks__sum">3</div>
+						</div>
+					</div>
+
+					<div class="top-header__driver driver">
+						<button type="button" class="top-header__driver-button driver__button button">Редактировать</button>
+
+						<div class="top-header__driver-info driver__info" data-da=".page-info__mobile,768,last">
+							<div class="top-header__driver-photo driver__photo">
+								<picture><source srcset="img/driver/driver-avatar.webp" type="image/webp"><img src="img/driver/driver-avatar.png" alt="driver-avatar"></picture>
+							</div>
+							<span>Имя и Фамилия</span>
+						</div>
+					</div>
+
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+
+			<div class="header__menu menu">
+				<div class="menu__container">
+					<nav class="menu__body">
+						<ul class="menu__list">
+
+							<li data-spollers="992,max" class="menu__item">
+								<div class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/orders.svg" alt="orders">
+									</div>
+									<span>Заказы</span>
+								</div>
+								<button type="button" data-spoller class="menu__link-btn icon-arrow-down"></button>
+								<div class="menu__item-dropdown dropdown-menu">
+									<a href="" class="dropdown-menu__link">Счета</a>
+									<a href="" class="dropdown-menu__link">Оплаты</a>
+								</div>
+							</li>
+
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/database.svg" alt="database">
+									</div>
+									<span>База данных</span>
+								</a>
+							</li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/expenses.svg" alt="expenses">
+									</div>
+									<span>Расходы</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/salary.svg" alt="salary">
+									</div>
+									<span>Зарплата</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/reports.svg" alt="reports">
+									</div>
+									<span>Отчеты</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/staff.svg" alt="staff">
+									</div>
+									<span>Сотрудники</span>
+								</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="main main-orders">
+			<div class="page-info__mobile"></div>
+			<div class="orders__container">
+
+				<div class="orders__result result-orders">
+					<h2 class="result-orders__title section-title">отправить счета</h2>
+
+					<div class="result-orders__body">
+
+						<table cellpadding="0" cellspacing="0" class="result-orders__table table-orders">
+							<tbody>
+								<tr>
+									<th class="table-orders__th"></th>
+									<th class="table-orders__th">Load ID</th>
+									<th class="table-orders__th">Pickup <br> date</th>
+									<th class="table-orders__th">Vehicle</th>
+									<th class="table-orders__th">Origin</th>
+									<th class="table-orders__th">Destination</th>
+									<th class="table-orders__th">Broker</th>
+									<th class="table-orders__th">Price</th>
+									<th class="table-orders__th">Paymant <br> memhod</th>
+									<th class="table-orders__th">Broker fee</th>
+									<th class="table-orders__th">Check <br> deposited</th>
+								</tr>
+								<tr>
+									<td class="table-orders__td">1</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">2</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">3</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">4</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td colspan="11" class="table-orders__total">
+										<span>Date: 25.01.2022 - 13.02.2022</span>
+										<span>Total $25 450,00</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<button type="submit" class="orders__button button">Отправить</button>
+					</div>
+				</div>
+
+				<div class="orders__result result-orders">
+					<h2 class="result-orders__title section-title">просроченные оплаты</h2>
+
+					<div class="result-orders__body">
+
+						<table cellpadding="0" cellspacing="0" class="result-orders__table table-orders">
+							<tbody>
+								<tr>
+									<th class="table-orders__th"></th>
+									<th class="table-orders__th">Load ID</th>
+									<th class="table-orders__th">Pickup <br> date</th>
+									<th class="table-orders__th">Vehicle</th>
+									<th class="table-orders__th">Origin</th>
+									<th class="table-orders__th">Destination</th>
+									<th class="table-orders__th">Broker</th>
+									<th class="table-orders__th">Price</th>
+									<th class="table-orders__th">Paymant <br> memhod</th>
+									<th class="table-orders__th">Broker fee</th>
+									<th class="table-orders__th">Check <br> deposited</th>
+								</tr>
+								<tr>
+									<td class="table-orders__td">1</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">2</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">3</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">4</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td colspan="11" class="table-orders__total">
+										<span>Date: 25.01.2022 - 13.02.2022</span>
+										<span>Total $25 450,00</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+
+				<div class="orders__info">
+					<div class="orders__info-body">
+						<div class="orders__info-item">
+							<span class="orders__info-text">Должны</span>
+							<div class="orders__info-data">10 999 <sup>$</sup></div>
+						</div>
+						<div class="orders__info-item">
+							<span class="orders__info-text">Cod у водителей</span>
+							<div class="orders__info-data">3 549 <sup>$</sup></div>
+						</div>
+						<div class="orders__info-item">
+							<span class="orders__info-text">Брокеры должны</span>
+							<div class="orders__info-data">3 445 <sup>$</sup></div>
+						</div>
+					</div>
+				</div>
+
+				<div data-tabs class="payment">
+					<nav data-tabs-titles class="payment__navigation">
+						<button type="button" class="payment__title _tab-active">New <span>25</span> </button>
+						<button type="button" class="payment__title">Assigned<span>6</span></button>
+						<button type="button" class="payment__title">Piked Up<span>10</span></button>
+						<button type="button" class="payment__title">Delivered<span>150</span></button>
+						<button type="button" class="payment__title">Billed<span>12</span></button>
+						<button type="button" class="payment__title">Payd<span>242</span></button>
+					</nav>
+					<div data-tabs-body class="payment__content">
+						<div class="payment__body">
+
+							<div class="payment__item">
+								<div class="payment__row">
+									<div class="payment__id">Load ID: {{Custom-Id}}</div>
+
+									<div class="payment__status">
+										<span>Advanced</span>
+										<span class="payment__deliver">Delivered</span>
+									</div>
+
+									<div class="payment__date">Trip7 / Oct 25,2021</div>
+
+									<div class="payment__total">$1,200.00 (9 Days)</div>
+
+									<div class="payment__action">
+										<button type="button" class="payment__button">Mark as Paid</button>
+										<button type="button" class="payment__button payment__button-white">Send invoice</button>
+									</div>
+								</div>
+								<div class="payment__row">
+									<div class="payment__group">
+										<div class="payment__group-row">
+											<div class="payment__type">2020 Ford F-250 Super Duty </div>
+											<div class="payment__type">Type: <span>Pickup (2 doors)</span> </div>
+											<div class="payment__type">VIN #: <span>1Ftbf2b63lec30855</span></div>
+											<div class="payment__type">$600.00</div>
+										</div>
+										<div class="payment__group-row">
+											<div class="payment__type">2020 Ford F-250 Super Duty </div>
+											<div class="payment__type">Type: <span>Pickup (2 doors)</span> </div>
+											<div class="payment__type">VIN #: <span>1Ftbf2b63lec30855</span></div>
+											<div class="payment__type">$600.00</div>
+										</div>
+									</div>
+									<div class="payment__group">
+										<div class="payment__info">
+											<span>Assigned to Dovbil Ihor +12242402844</span> <br>
+											<span>Invoice is sent on 29 oct.2021, 12:11</span> <br>
+											<span>No Paymant received</span>
+										</div>
+									</div>
+								</div>
+								<div class="payment__row">
+									<div class="payment__row-col">
+										<div class="payment__details">
+											<div class="payment__details-title">origin</div>
+											<div class="payment__type">Delevan Commercial</div>
+
+											<ul class="payment__details-list">
+												<li>1231 Geneva St</li>
+												<li>Delavan, WI 53115</li>
+												<li>28 oct, 2021, 18:13</li>
+												<li>Tom Torgerson</li>
+												<li>Phone: 414-828-0205</li>
+											</ul>
+										</div>
+									</div>
+									<div class="payment__row-col">
+										<div class="payment__details-title">origin</div>
+										<div class="payment__type">Destination</div>
+
+										<ul class="payment__details-list">
+											<li>1231 Geneva St</li>
+											<li>Delavan, WI 53115</li>
+											<li>28 oct, 2021, 18:13</li>
+											<li>Tom Torgerson</li>
+											<li>Phone: 414-828-0205</li>
+										</ul>
+									</div>
+									<div class="payment__row-col">
+										<div class="payment__details-title">shipper/ customer</div>
+										<div class="payment__type">Kunes</div>
+
+										<ul class="payment__details-list">
+											<li>Phone: 414-828-0205</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="payment__item">
+								<div class="payment__row">
+									<div class="payment__id">Load ID: {{Custom-Id}}</div>
+
+									<div class="payment__status">
+										<span>Advanced</span>
+										<span class="payment__deliver">Delivered</span>
+									</div>
+
+									<div class="payment__date">Trip7 / Oct 25,2021</div>
+
+									<div class="payment__total">$1,200.00 (9 Days)</div>
+
+									<div class="payment__action">
+										<button type="button" class="payment__button">Mark as Paid</button>
+										<button type="button" class="payment__button payment__button-white">Send invoice</button>
+									</div>
+								</div>
+								<div class="payment__row">
+									<div class="payment__group">
+										<div class="payment__group-row">
+											<div class="payment__type">2020 Ford F-250 Super Duty </div>
+											<div class="payment__type">Type: <span>Pickup (2 doors)</span> </div>
+											<div class="payment__type">VIN #: <span>1Ftbf2b63lec30855</span></div>
+											<div class="payment__type">$600.00</div>
+										</div>
+										<div class="payment__group-row">
+											<div class="payment__type">2020 Ford F-250 Super Duty </div>
+											<div class="payment__type">Type: <span>Pickup (2 doors)</span> </div>
+											<div class="payment__type">VIN #: <span>1Ftbf2b63lec30855</span></div>
+											<div class="payment__type">$600.00</div>
+										</div>
+									</div>
+									<div class="payment__group">
+										<div class="payment__info">
+											<span>Assigned to Dovbil Ihor +12242402844</span> <br>
+											<span>Invoice is sent on 29 oct.2021, 12:11</span> <br>
+											<span>No Paymant received</span>
+										</div>
+									</div>
+								</div>
+								<div class="payment__row">
+									<div class="payment__row-col">
+										<div class="payment__details">
+											<div class="payment__details-title">origin</div>
+											<div class="payment__type">Delevan Commercial</div>
+
+											<ul class="payment__details-list">
+												<li>1231 Geneva St</li>
+												<li>Delavan, WI 53115</li>
+												<li>28 oct, 2021, 18:13</li>
+												<li>Tom Torgerson</li>
+												<li>Phone: 414-828-0205</li>
+											</ul>
+										</div>
+									</div>
+									<div class="payment__row-col">
+										<div class="payment__details-title">origin</div>
+										<div class="payment__type">Destination</div>
+
+										<ul class="payment__details-list">
+											<li>1231 Geneva St</li>
+											<li>Delavan, WI 53115</li>
+											<li>28 oct, 2021, 18:13</li>
+											<li>Tom Torgerson</li>
+											<li>Phone: 414-828-0205</li>
+										</ul>
+									</div>
+									<div class="payment__row-col">
+										<div class="payment__details-title">shipper/ customer</div>
+										<div class="payment__type">Kunes</div>
+
+										<ul class="payment__details-list">
+											<li>Phone: 414-828-0205</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="payment__body">
+							<div class="payment__item">
+								<div class="payment__row">
+									<div class="payment__id">Load ID: {{Custom-Id}}</div>
+
+									<div class="payment__status">
+										<span>Advanced</span>
+										<span class="payment__deliver">Delivered</span>
+									</div>
+
+									<div class="payment__date">Trip7 / Oct 25,2021</div>
+
+									<div class="payment__total">$1,200.00 (9 Days)</div>
+
+									<div class="payment__action">
+										<button type="button" class="payment__button">Mark as Paid</button>
+										<button type="button" class="payment__button payment__button-white">Send invoice</button>
+									</div>
+								</div>
+								<div class="payment__row">
+									<div class="payment__group">
+										<div class="payment__group-row">
+											<div class="payment__type">2020 Ford F-250 Super Duty </div>
+											<div class="payment__type">Type: <span>Pickup (2 doors)</span> </div>
+											<div class="payment__type">VIN #: <span>1Ftbf2b63lec30855</span></div>
+											<div class="payment__type">$600.00</div>
+										</div>
+										<div class="payment__group-row">
+											<div class="payment__type">2020 Ford F-250 Super Duty </div>
+											<div class="payment__type">Type: <span>Pickup (2 doors)</span> </div>
+											<div class="payment__type">VIN #: <span>1Ftbf2b63lec30855</span></div>
+											<div class="payment__type">$600.00</div>
+										</div>
+									</div>
+									<div class="payment__group">
+										<div class="payment__info">
+											<span>Assigned to Dovbil Ihor +12242402844</span> <br>
+											<span>Invoice is sent on 29 oct.2021, 12:11</span> <br>
+											<span>No Paymant received</span>
+										</div>
+									</div>
+								</div>
+								<div class="payment__row">
+									<div class="payment__row-col">
+										<div class="payment__details">
+											<div class="payment__details-title">origin</div>
+											<div class="payment__type">Delevan Commercial</div>
+
+											<ul class="payment__details-list">
+												<li>1231 Geneva St</li>
+												<li>Delavan, WI 53115</li>
+												<li>28 oct, 2021, 18:13</li>
+												<li>Tom Torgerson</li>
+												<li>Phone: 414-828-0205</li>
+											</ul>
+										</div>
+									</div>
+									<div class="payment__row-col">
+										<div class="payment__details-title">origin</div>
+										<div class="payment__type">Destination</div>
+
+										<ul class="payment__details-list">
+											<li>1231 Geneva St</li>
+											<li>Delavan, WI 53115</li>
+											<li>28 oct, 2021, 18:13</li>
+											<li>Tom Torgerson</li>
+											<li>Phone: 414-828-0205</li>
+										</ul>
+									</div>
+									<div class="payment__row-col">
+										<div class="payment__details-title">shipper/ customer</div>
+										<div class="payment__type">Kunes</div>
+
+										<ul class="payment__details-list">
+											<li>Phone: 414-828-0205</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="payment__body">
+							<div class="payment__item">
+								<div class="payment__row">
+									<div class="payment__id">Load ID: {{Custom-Id}}</div>
+
+									<div class="payment__status">
+										<span>Advanced</span>
+										<span class="payment__deliver">Delivered</span>
+									</div>
+
+									<div class="payment__date">Trip7 / Oct 25,2021</div>
+
+									<div class="payment__total">$1,200.00 (9 Days)</div>
+
+									<div class="payment__action">
+										<button type="button" class="payment__button">Mark as Paid</button>
+										<button type="button" class="payment__button payment__button-white">Send invoice</button>
+									</div>
+								</div>
+								<div class="payment__row">
+									<div class="payment__group">
+										<div class="payment__group-row">
+											<div class="payment__type">2020 Ford F-250 Super Duty </div>
+											<div class="payment__type">Type: <span>Pickup (2 doors)</span> </div>
+											<div class="payment__type">VIN #: <span>1Ftbf2b63lec30855</span></div>
+											<div class="payment__type">$600.00</div>
+										</div>
+										<div class="payment__group-row">
+											<div class="payment__type">2020 Ford F-250 Super Duty </div>
+											<div class="payment__type">Type: <span>Pickup (2 doors)</span> </div>
+											<div class="payment__type">VIN #: <span>1Ftbf2b63lec30855</span></div>
+											<div class="payment__type">$600.00</div>
+										</div>
+									</div>
+									<div class="payment__group">
+										<div class="payment__info">
+											<span>Assigned to Dovbil Ihor +12242402844</span> <br>
+											<span>Invoice is sent on 29 oct.2021, 12:11</span> <br>
+											<span>No Paymant received</span>
+										</div>
+									</div>
+								</div>
+								<div class="payment__row">
+									<div class="payment__row-col">
+										<div class="payment__details">
+											<div class="payment__details-title">origin</div>
+											<div class="payment__type">Delevan Commercial</div>
+
+											<ul class="payment__details-list">
+												<li>1231 Geneva St</li>
+												<li>Delavan, WI 53115</li>
+												<li>28 oct, 2021, 18:13</li>
+												<li>Tom Torgerson</li>
+												<li>Phone: 414-828-0205</li>
+											</ul>
+										</div>
+									</div>
+									<div class="payment__row-col">
+										<div class="payment__details-title">origin</div>
+										<div class="payment__type">Destination</div>
+
+										<ul class="payment__details-list">
+											<li>1231 Geneva St</li>
+											<li>Delavan, WI 53115</li>
+											<li>28 oct, 2021, 18:13</li>
+											<li>Tom Torgerson</li>
+											<li>Phone: 414-828-0205</li>
+										</ul>
+									</div>
+									<div class="payment__row-col">
+										<div class="payment__details-title">shipper/ customer</div>
+										<div class="payment__type">Kunes</div>
+
+										<ul class="payment__details-list">
+											<li>Phone: 414-828-0205</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="orders__info">
+
+					<h2 class="orders__info-title section-title">заказы по фильтрам</h2>
+
+					<div class="orders__info-body">
+						<div class="orders__info-item">
+							<div class="orders__info-data">Owners - 21</div>
+						</div>
+						<div class="orders__info-item">
+							<div class="orders__info-data">Drivers - 25</div>
+						</div>
+						<div class="orders__info-item">
+							<div class="orders__info-data">Dispatchers - 30</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="orders__result result-orders">
+					<h2 class="result-orders__title section-title">поиск по фильтрам</h2>
+
+					<div class="result-orders__filters filters-orders">
+						<div class="filters-orders__item">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Load ID</span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+						<div class="filters-orders__item">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Pick up data </span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+						<div class="filters-orders__item">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Vehikle </span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+						<div class="filters-orders__item">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Pick up location </span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+						<div class="filters-orders__item flex-1">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Delivery location </span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+						<div class="filters-orders__item">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Brocker </span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+						<div class="filters-orders__item filters-orders__item-sm">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Price </span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+						<div class="filters-orders__item">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Payment method </span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+
+						<div class="filters-orders__item filters-orders__item-check">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Paymant</span>
+
+								<div class="filters-orders__checkbox">
+									<div class="checkbox">
+										<input id="c_1" class="checkbox__input" type="checkbox" value="1">
+										<label for="c_1" class="checkbox__label"><span class="checkbox__text">Yes</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_2" class="checkbox__input" type="checkbox" value="1">
+										<label for="c_2" class="checkbox__label"><span class="checkbox__text">No</span></label>
+									</div>
+								</div>
+
+							</label>
+						</div>
+
+						<div class="filters-orders__item filters-orders__item-check">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Billed</span>
+
+								<div class="filters-orders__checkbox">
+									<div class="checkbox">
+										<input id="c_3" class="checkbox__input" type="checkbox" value="1">
+										<label for="c_3" class="checkbox__label"><span class="checkbox__text">Yes</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_4" class="checkbox__input" type="checkbox" value="1">
+										<label for="c_4" class="checkbox__label"><span class="checkbox__text">No</span></label>
+									</div>
+								</div>
+
+							</label>
+						</div>
+
+
+
+						<div class="filters-orders__item">
+							<label class="filters-orders__label">
+								<span class="filters-orders__text">Ф.И.</span>
+								<input autocomplete="off" type="text" class="filters-orders__input">
+							</label>
+						</div>
+					</div>
+					<div class="result-orders__body">
+
+						<table cellpadding="0" cellspacing="0" class="result-orders__table table-orders">
+							<tbody>
+								<tr>
+									<th class="table-orders__th"></th>
+									<th class="table-orders__th">Load ID</th>
+									<th class="table-orders__th">Pickup <br> date</th>
+									<th class="table-orders__th">Vehicle</th>
+									<th class="table-orders__th">Origin</th>
+									<th class="table-orders__th">Destination</th>
+									<th class="table-orders__th">Broker</th>
+									<th class="table-orders__th">Price</th>
+									<th class="table-orders__th">Paymant <br> memhod</th>
+									<th class="table-orders__th">Broker fee</th>
+									<th class="table-orders__th">Check <br> deposited</th>
+								</tr>
+								<tr>
+									<td class="table-orders__td">1</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">2</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">3</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td class="table-orders__td">4</td>
+									<td class="table-orders__td">2018 Chevrolet Traverse <br>2018 Chevrolet Equinox</td>
+									<td class="table-orders__td">29/10/2021</td>
+									<td class="table-orders__td">2019 GMC Savana Cargo 2019<br>Ford Transit Cargo</td>
+									<td class="table-orders__td">Denton, TX<br> 76201</td>
+									<td class="table-orders__td">Load in toeeme</td>
+									<td class="table-orders__td">Metrogistics</td>
+									<td class="table-orders__td">$325,00</td>
+									<td class="table-orders__td">30 days</td>
+									<td class="table-orders__td">Load in <br> toeeme</td>
+									<td class="table-orders__td">Yes</td>
+								</tr>
+
+								<tr>
+									<td colspan="11" class="table-orders__total">
+										<span>Date: 25.01.2022 - 13.02.2022</span>
+										<span>Total $25 450,00</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<form class="result-orders__send">
+							<div class="result-orders__send-inner">
+								<input autocomplete="off" type="email" placeholder="Введите Email" class="result-orders__send-input">
+								<button type="submit" class="result-orders__send-button">Отправить</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+				<div class="page-total">
+					<div class="page-total__container">
+
+						<div class="page-total__body">
+							<div class="page-total__item">
+								<h5 class="page-total__text">Сегодня</h5>
+								<span>3</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Вчера</h5>
+								<span>5</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Неделя</h5>
+								<span>1</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Месяц</h5>
+								<span>5</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Квартал</h5>
+								<span>4</span>
+							</div>
+							<div class="page-total__item">
+								<h5 class="page-total__text">Дата</h5>
+								<span>5</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</div>
+	<div id="login" aria-hidden="true" class="popup-login login popup">
+		<div class="popup__wrapper login__wrapper">
+			<div class="popup__container">
+				<div class="popup__content login__content">
+					<button data-close type="button" class="login__close icon-cancel"></button>
+
+					<form action="#" class="login__form form-login">
+						<div class="form-login__group">
+							<div class="form-login__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-required placeholder="Логин, телефон или почта" class="form-login__input input">
+							</div>
+							<div class="form-login__row">
+								<input autocomplete="off" type="password" name="form[]" data-error="Неверный Пароль" data-required placeholder="Пароль" class="form-login__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-login__button button">Войти</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="register" aria-hidden="true" class="popup-login register popup">
+		<div class="popup__wrapper register__wrapper">
+			<div class="popup__container">
+				<div class="popup__content register__content">
+					<button data-close type="button" class="register__close icon-cancel"></button>
+
+					<form action="#" class="register__form form-register">
+						<div class="form-register__group">
+
+							<label class="form-register__upload upload icon-download-input">
+								<span>Photo</span>
+								<input id="upload-input" class="upload__input" type="file" name="file[]" multiple="">
+								<picture><source srcset="#" type="image/webp"><img id="upload-img" class="upload__img" src="#" alt="user-avatar" /></picture>
+							</label>
+
+						</div>
+						<div class="form-register__group">
+							<div class="form-register__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Логин, телефон или почта" class="form-register__input input">
+							</div>
+							<div class="form-register__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Имя и Фамилия" class="form-register__input input">
+							</div>
+							<div class="form-register__row">
+								<input autocomplete="off" type="password" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Введите пароль" class="form-register__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-register__button button">Зарегистрироваться</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220411215208"></script>
+</body>
+
+</html>

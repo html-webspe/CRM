@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Карточка водителя</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220411215208">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<h1 class="top-header__title title">Карточка водителя</h1>
+
+					<div class="top-header__info">
+						<time class="top-header__info-item clock icon-clock" data-da=".page-info__mobile,768,1">10:00</time>
+						<div class="top-header__info-item calculator icon-calculator" data-da=".page-info__mobile,768,2">
+							Калькулятор
+						</div>
+						<div class="top-header__info-item tasks icon-tasks">
+							Задание
+							<div class="tasks__sum">3</div>
+						</div>
+					</div>
+
+					<div class="top-header__driver driver">
+						<button type="button" class="top-header__driver-button driver__button button">Редактировать</button>
+
+						<div class="top-header__driver-info driver__info" data-da=".page-info__mobile,768,last">
+							<div class="top-header__driver-photo driver__photo">
+								<picture><source srcset="img/driver/driver-avatar.webp" type="image/webp"><img src="img/driver/driver-avatar.png" alt="driver-avatar"></picture>
+							</div>
+							<span>Имя и Фамилия</span>
+						</div>
+					</div>
+
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+
+			<div class="header__menu menu">
+				<div class="menu__container">
+					<nav class="menu__body">
+						<ul class="menu__list">
+
+							<li data-spollers="992,max" class="menu__item">
+								<div class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/orders.svg" alt="orders">
+									</div>
+									<span>Заказы</span>
+								</div>
+								<button type="button" data-spoller class="menu__link-btn icon-arrow-down"></button>
+								<div class="menu__item-dropdown dropdown-menu">
+									<a href="" class="dropdown-menu__link">Счета</a>
+									<a href="" class="dropdown-menu__link">Оплаты</a>
+								</div>
+							</li>
+
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/database.svg" alt="database">
+									</div>
+									<span>База данных</span>
+								</a>
+							</li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/expenses.svg" alt="expenses">
+									</div>
+									<span>Расходы</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/salary.svg" alt="salary">
+									</div>
+									<span>Зарплата</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/reports.svg" alt="reports">
+									</div>
+									<span>Отчеты</span>
+								</a></li>
+							<li class="menu__item"><a href="" class="menu__link">
+									<div class="menu__link-icon">
+										<img src="img/icons/menu/staff.svg" alt="staff">
+									</div>
+									<span>Сотрудники</span>
+								</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="main main-card">
+			<div class="page-info__mobile"></div>
+
+			<div class="main__container">
+
+				<aside class="card-aside">
+					<div class="card-aside__driver driver-card">
+						<div class="driver-card__group">
+							<div class="driver-card__photo">
+								<picture><source srcset="img/driver/driver-avatar.webp" type="image/webp"><img class="upload__img" src="img/driver/driver-avatar.png" alt="Фото водителя" /></picture>
+
+								<label class="driver-card__upload icon-add">
+									<input class="upload__input" type="file" name="file[]" multiple="">
+								</label>
+
+							</div>
+							<div class="driver-card__status">
+								<p>Статус водителя</p>
+								<span class="">Принят</span>
+							</div>
+						</div>
+
+						<div class="driver-card__group">
+							<div class="driver-card__info">
+								<ul>
+									<li>Дата принятия<span>20.12.2021</span></li>
+									<li>Возраст<span>36 лет</span></li>
+									<li>Рейтинг<span>6К</span></li>
+									<li>Депозит<span>2600 $</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="driver-card__group">
+							<div class="driver-card__file">
+								<span>Прикрепленные файлы</span>
+								<div class="driver-card__file-group js-file">
+									<div class="driver-card__file-item">
+										<img src="img/icons/download-icon.svg">
+										<a href="#" download="clock.svg">Doc1</a>
+									</div>
+									<div class="driver-card__file-item">
+										<img src="img/icons/download-icon.svg">
+										<a href="#" download="clock.svg">Doc1</a>
+									</div>
+								</div>
+								<label>
+									<img src="img/icons/download-icon.svg" alt="">
+									<input id="js-file-input" type="file">
+									Загрузить файл
+								</label>
+							</div>
+						</div>
+					</div>
+				</aside>
+
+				<div class="card-main">
+					<div class="card-info">
+						<div class="card-info__group">
+							<div class="card-info__fio icon-driver-icon">Дмитрук Алексей</div>
+
+							<div class="card-info__contract">
+								<span class="card-info__contract-number">6303120558</span>
+
+								<div class="card-info__contract-status">
+									<span>Контракт</span>
+									<div class="card-info__contract-status-icon">
+										<img src="img/icons/check.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-info__group">
+							<div class="card-info__progress">
+								<div class="card-info__progress-data">
+									<span><span>19</span> рабочих дней</span>
+									<span><span>6</span> выходных</span>
+								</div>
+								<progress class="progress" value="70" max="100"> </progress>
+							</div>
+
+							<div class="card-info__dispatchr">
+								Диспетчер
+								<span> Иванова Екатерина</span>
+							</div>
+							<div class="card-info__kpd">
+								КПД
+								<span>100%</span>
+							</div>
+							<div class="card-info__owner" data-da=".card-info__contract,768,last">
+								<span class="card-info__owner-number">DL-A</span>
+								<div class="card-info__owner-status">
+									<span>Owner</span>
+
+									<div class="card-info__owner-status-icon">
+										<img src="img/icons/close.svg" alt="">
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="card-info__group">
+							<div class="card-info__money">
+								<div class="card-info__money-item">*СOD <span>5 000 $</span> </div>
+								<div class="card-info__money-item">Касса<span>15 000 $</span></div>
+								<div class="card-info__money-item">Прибыль<span>7 800 $</span></div>
+								<div class="card-info__money-item">зп получена<span>5 285 $</span></div>
+								<div class="card-info__money-item">Должен<span>5 000 $</span></div>
+								<div class="card-info__money-item">Затраты<span>500 $</span></div>
+							</div>
+							<button type="button" class="card-info__calculate button">Посчитать зп</button>
+						</div>
+					</div>
+					<section class="section maintance">
+						<div class="maintance__inner">
+							<h2 class="section-title maintance__title">maintance</h2>
+							<div class="maintance__body">
+								<div class="maintance__item">
+									<div class="maintance__icon expires-week">
+										<img src="img/maintance/01.svg" alt="maintance">
+									</div>
+									<div class="maintance__content">
+										<h4 class="maintance__name">Масло</h4>
+										<time class="maintance__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="maintance__item">
+									<div class="maintance__icon">
+										<img src="img/maintance/02.svg" alt="maintance">
+									</div>
+									<div class="maintance__content">
+										<h4 class="maintance__name">Фильтр</h4>
+										<time class="maintance__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="maintance__item">
+									<div class="maintance__icon expires-month">
+										<img src="img/maintance/03.svg" alt="maintance">
+									</div>
+									<div class="maintance__content">
+										<h4 class="maintance__name">Шины</h4>
+										<time class="maintance__date">25.11.2021</time>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section expiered">
+						<div class="expiered__inner">
+							<h2 class="section-title expiered__title">expiered</h2>
+							<div class="expiered__body">
+								<div class="expiered__item">
+									<div class="expiered__icon">
+										<img src="img/expiered/01.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Truck</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__item">
+									<div class="expiered__icon">
+										<img src="img/expiered/02.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Trailer</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__item">
+									<div class="expiered__icon expires-month">
+										<img src="img/expiered/03.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Med card</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__item">
+									<div class="expiered__icon">
+										<img src="img/expiered/04.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Inspection</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__item">
+									<div class="expiered__icon expires-week">
+										<img src="img/expiered/05.svg" alt="expiered">
+									</div>
+									<div class="expiered__content">
+										<h4 class="expiered__name">Страховка</h4>
+										<time class="expiered__date">25.11.2021</time>
+									</div>
+								</div>
+								<div class="expiered__color">
+									<div class=" expiered__color-month">Истекает через 1 месяц</div>
+									<div class=" expiered__color-week">Истекает через 1 неделю</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section equipment">
+						<div class="equipment__inner">
+							<h2 class="section-title equipment__title">equipment</h2>
+
+							<div class="equipment__body">
+								<div class="equipment__name">Truck - 21</div>
+								<div class="equipment__name">Trailer - 1</div>
+								<div class="equipment__name">Fueldcard - 5.4</div>
+							</div>
+
+						</div>
+					</section>
+
+					<div class="company-data">
+						<div class="company-data__inner">
+							<span class="company-data__name">Nationwide Transport Services LLC</span>
+
+							<div class="company-data__account">
+								Номер счета
+								<span>6303120558</span>
+							</div>
+						</div>
+					</div>
+					<div class="comment">
+						<div class="comment-audio">
+							<div class="comment-audio__icon">
+								<img src="img/icons/audio-icon.svg" alt="">
+								<span>Tap to speak</span>
+							</div>
+
+							<div class="comment-audio__body">
+								<div class="comment-audio__item">
+									<audio id="comment-audio" class="comment-player" preload="true">
+										<source src="img/machine-gun-kelly-title-track.mp3">
+									</audio>
+
+									<div id="audioplayer" class="comment-audio__player">
+										<button id="pButton" class="pause comment-audio__btn"></button>
+										<div id="comment-audio__timeline" class="comment-audio__timeline">
+											<div id="playhead" class="comment-audio__playhead"></div>
+										</div>
+									</div>
+								</div>
+								<div class="comment-audio__item">
+									<audio id="comment-audio" class="comment-player" preload="true">
+										<source src="img/machine-gun-kelly-title-track.mp3">
+									</audio>
+									<div id="audioplayer" class="comment-audio__player">
+										<button id="pButton" class="pause comment-audio__btn"></button>
+										<div id="comment-audio__timeline" class="comment-audio__timeline">
+											<div id="playhead" class="comment-audio__playhead"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="comment-textarea">
+							<div class="comment-textarea__item">
+								<div class="comment-textarea__avatar">
+									<picture><source srcset="img/comment/02.webp" type="image/webp"><img src="img/comment/02.png" alt="avatar"></picture>
+								</div>
+								<p>Я впервые сталкиваюсь с таким уровнем работы техподдержки. Обращался уже несколько раз. Реакция очень
+									быстрая. Быстро решают мои проблемы.</p>
+							</div>
+							<div class="comment-textarea__item">
+								<div class="comment-textarea__avatar">
+									<picture><source srcset="img/comment/01.webp" type="image/webp"><img src="img/comment/01.png" alt="avatar"></picture>
+								</div>
+								<p>В целом у нас дружная атмосфера, все энергичные и заряженные.</p>
+							</div>
+							<div class="comment-textarea__text">
+								<textarea placeholder="Введите комментарий" class="comment-textarea__input"></textarea>
+								<button type="button" class="comment-textarea__button button">Добавить</button>
+							</div>
+						</div>
+					</div>
+					<div data-tabs="968" class="fastaccess">
+
+						<nav data-tabs-titles class="fastaccess__navigation">
+							<button type="button" class="fastaccess__navigation-title _tab-active icon-arrow-spoller">Должен</button>
+							<button type="button" class="fastaccess__navigation-title icon-arrow-spoller">ЗП посчитанная</button>
+							<button type="button" class="fastaccess__navigation-title icon-arrow-spoller">Expiered</button>
+							<button type="button" class="fastaccess__navigation-title icon-arrow-spoller">Maintance</button>
+							<button type="button" class="fastaccess__navigation-title icon-arrow-spoller">Truck</button>
+						</nav>
+
+						<div data-tabs-body class="fastaccess__content">
+							<div class="fastaccess__body">
+								100 $
+							</div>
+							<div class="fastaccess__body">
+								2 500 $
+							</div>
+							<div class="fastaccess__body">
+								3 500 $
+							</div>
+							<div class="fastaccess__body">
+								4 500 $
+							</div>
+							<div class="fastaccess__body">
+								2 500 $
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+	</div>
+	<div id="login" aria-hidden="true" class="popup-login login popup">
+		<div class="popup__wrapper login__wrapper">
+			<div class="popup__container">
+				<div class="popup__content login__content">
+					<button data-close type="button" class="login__close icon-cancel"></button>
+
+					<form action="#" class="login__form form-login">
+						<div class="form-login__group">
+							<div class="form-login__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-required placeholder="Логин, телефон или почта" class="form-login__input input">
+							</div>
+							<div class="form-login__row">
+								<input autocomplete="off" type="password" name="form[]" data-error="Неверный Пароль" data-required placeholder="Пароль" class="form-login__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-login__button button">Войти</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="register" aria-hidden="true" class="popup-login register popup">
+		<div class="popup__wrapper register__wrapper">
+			<div class="popup__container">
+				<div class="popup__content register__content">
+					<button data-close type="button" class="register__close icon-cancel"></button>
+
+					<form action="#" class="register__form form-register">
+						<div class="form-register__group">
+
+							<label class="form-register__upload upload icon-download-input">
+								<span>Photo</span>
+								<input id="upload-input" class="upload__input" type="file" name="file[]" multiple="">
+								<picture><source srcset="#" type="image/webp"><img id="upload-img" class="upload__img" src="#" alt="user-avatar" /></picture>
+							</label>
+
+						</div>
+						<div class="form-register__group">
+							<div class="form-register__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Логин, телефон или почта" class="form-register__input input">
+							</div>
+							<div class="form-register__row">
+								<input autocomplete="off" type="text" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Имя и Фамилия" class="form-register__input input">
+							</div>
+							<div class="form-register__row">
+								<input autocomplete="off" type="password" name="form[]" data-error="Поле обязательно для заполнения" data-validate data-required placeholder="Введите пароль" class="form-register__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-register__button button">Зарегистрироваться</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220411215208"></script>
+</body>
+
+</html>
